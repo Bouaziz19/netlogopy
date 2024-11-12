@@ -21,7 +21,7 @@ pip install netlogopy --upgrade
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 2: `set_background`
@@ -117,7 +117,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 3: `street`
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 4: `fd`
@@ -174,7 +174,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 5: `netlogoshow`
@@ -204,7 +204,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 6: `distanceto`
@@ -233,7 +233,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 7: `face_to`
@@ -262,7 +262,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 8: `move_to`
@@ -291,7 +291,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 9: `hideturtle`
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 10: `set_shape`
@@ -347,7 +347,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 11: `getxyturtle`
@@ -375,7 +375,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 12: `setxy`
@@ -403,7 +403,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 ### Example 13: `distancebetween`
@@ -432,7 +432,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 
@@ -481,7 +481,7 @@ if __name__ == "__main__":
 ```
  </td>
     <td>
-<img src="res/animation.gif" alt="Example Test Animation" width="800"/>
+
 
 </td> </tr> </table> 
 
