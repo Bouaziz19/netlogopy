@@ -19,11 +19,6 @@ conda install openjdk -y
 pip install netlogopy
 pip install netlogopy --upgrade
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 
 ### Step 3: Configure IDE (Optional)
 To set up your IDE (e.g., VS Code) for Command Line Interface (CLI) compatibility, check:
@@ -36,9 +31,7 @@ To set up your IDE (e.g., VS Code) for Command Line Interface (CLI) compatibilit
 ## Example Test
 The following example demonstrates a basic setup of `netlogopy`, initializing a NetLogo world and creating an agent named `car01` with simple movement in the simulation environment.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -56,20 +49,13 @@ if __name__ == "__main__":
     n.close_model()
 
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 
 ## Usage Examples
 
 ### Example 1: `pyturtle`
 This example shows how to create an agent (a "turtle") in NetLogo using Python. Here, we create a `car`-shaped agent named `car01` and move it within the world.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -86,17 +72,10 @@ if __name__ == "__main__":
         print(f"***********  {i}  ********")  
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 2: `set_background`
 In this example, we set a custom background image in the NetLogo world. The background can be any image file accessible from your system.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -115,17 +94,10 @@ if __name__ == "__main__":
         print(f"***********  {i}  ********")  
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 3: `street`
 This example demonstrates creating a link between two agents in the NetLogo world. Here, a `street` link connects two car agents (`car01` and `car02`).
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -144,17 +116,10 @@ if __name__ == "__main__":
         print(f"***********  {i}  ********")  
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 4: `fd`
 In this example, the `fd` function is used to move the agent forward by one unit with each loop iteration.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -172,17 +137,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 5: `netlogoshow`
 Here, `netlogoshow` displays text above the agent during simulation. Each iteration, we update the displayed text.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -202,17 +160,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 6: `distanceto`
 This example shows how to calculate and print the distance between two agents in the world using the `distanceto` function.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -231,17 +182,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 7: `face_to`
 In this example, the `face_to` function directs `car01` to face towards `car02`.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -260,17 +204,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 8: `move_to`
 The `move_to` function moves `car01` directly to `car02`'s position when the loop reaches a specified iteration.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -289,17 +226,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 9: `hideturtle`
 This example demonstrates how to hide an agent in the simulation using `hideturtle`.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -317,17 +247,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 10: `set_shape`
 In this example, `set_shape` changes the shape of `car01` to `default` at a specific iteration.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -345,17 +268,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 11: `getxyturtle`
 The `getxyturtle` function retrieves the current `x` and `y` coordinates of `car01`.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -373,17 +289,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 12: `setxy`
 The `setxy` function sets the `x` and `y` coordinates of `car01` to new values during the simulation.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -401,17 +310,10 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 ### Example 13: `distancebetween`
 This example calculates and prints the distance between `car01` and `car02`.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time
@@ -430,20 +332,13 @@ if __name__ == "__main__":
         car01.fd(1)
     n.close_model()
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 
 ## Usage Examples
 
 ### Integrating an Existing NetLogo Model with Python
 We have added a feature that allows you to use older NetLogo simulators and modify them with Python, creating a dual-layered simulator. The first layer represents the original simulator, while the second layer is created in Python using `netlogopy`. This approach enables further development on older simulators without having to rebuild them entirely in `netlogopy`.
 
-<table>
-  <tr>
-    <td>
+
 
 ```python
 import time, os, sys
@@ -479,11 +374,6 @@ if __name__ == "__main__":
         if i % 20 == 0:
             car01.setxy(10, 10)
 ```
- </td>
-    <td>
-
-
-</td> </tr> </table> 
 
 # Download Examples
 
