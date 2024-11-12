@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.14'
+VERSION = '0.0.16'
 DESCRIPTION = 'netlogopy : Usage netlogo by python'
 LONG_DESCRIPTION = 'netlogopy : Usage netlogo by python () '
 
@@ -38,7 +38,6 @@ setup(
 )
 
 # python setup.py bdist_wheel
-# pip install dist/netlogopy-0.0.1-py3-none-any
 # twine upload dist/*
-# __token__
-
+#   username = __token__
+#   password = # un jeton de projet 

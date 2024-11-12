@@ -1,5 +1,5 @@
 import time
-from netlogopy.netlogopy import *
+from netlogopy2.netlogopy import *
 
 if __name__ == "__main__" :
     # Change netlogo_home
@@ -9,7 +9,7 @@ if __name__ == "__main__" :
     resize_world(n,0,60,0,60)
     # Change path fo image
     # path_image ="path/to/image/netlogopy.png"
-    path_image= "C:/Nouveau dossier/netlogopy/Examples/netlogopy.png"
+    path_image= "C:/Nouveau dossier (2)/netlogopy/Examples/netlogopy.png"
     set_background(n,path_image)
     car01=pyturtle(n,x=20,y=20,shape="car",size_shape=4,color=15,name="car01",labelcolor=15)
     

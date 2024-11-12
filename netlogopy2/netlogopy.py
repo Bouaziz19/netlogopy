@@ -1,13 +1,43 @@
 import copy
 import nl4py,time,copy
 import os
+import shutil
 
 global list_pyturtle
 global list_street
 
 list_pyturtle=[]
 list_street=[]
-
+def run_netlogo(netlogo_home="C:/Program Files/NetLogo 6.2.2",path_model=""):
+    
+    nl4py.initialize(netlogo_home)
+    nl4py.startServer(netlogo_home)
+    if path_model == "":
+        model = os.path.dirname(__file__)+"\\netlogopy.nlogo"
+    else :
+        model = path_model
+    n=nl4py.NetLogoApp()
+    n.openModel(model)
+    n.command("setup")
+    return n
+def run_netlogo_base(netlogo_home="C:/Program Files/NetLogo 6.2.2"):
+    nl4py.initialize(netlogo_home)
+    nl4py.startServer(netlogo_home)
+    model = os.path.dirname(__file__)+"\\netlogopy.nlogo"
+    n=nl4py.NetLogoApp()
+    n.openModel(model)
+    n.command("setup")
+    return n
+def reset_base_file(dest):
+    model = os.path.dirname(__file__)+"/base.nls"
+    src = model
+    dest+"/base2.nls"
+    shutil.copy2(src, dest)
+def create_ntlg_file(dest):
+    model = os.path.dirname(__file__)+"/base.nls"
+    src = model
+    dest+"/base2.nls"
+    shutil.copy2(src, dest)
 def netlogoshow(n,word):
         c = "netlogoshow "+list2nllist([word])
         c = n.report(c)
@@ -29,17 +59,13 @@ def set_background(n,image):
         c = "set_background "+list2nllist([image])
         c = n.report(c)
         return c
+def run_command(n,command ):
+        c = n.command(command )
+        return c
 def de_copy(a):
     return copy.deepcopy(a)
-def run_netlogo(netlogo_home="C:/Program Files/NetLogo 6.2.2"):
-    
-    nl4py.initialize(netlogo_home)
-    nl4py.startServer(netlogo_home)
-    model = os.path.dirname(__file__)+"/netlogopy.nlogo"
-    n=nl4py.NetLogoApp()
-    n.openModel(model)
-    n.command("setup")
-    return n
+
+
 def distancebetween(n,fromm=0,target=1):
         id_fromm=fromm.id
         id_target=target.id
@@ -138,6 +164,14 @@ class pyturtle(turtle) :
     def create_pyturtle_xyid(self,n,x,y,shape,size_shape,color,name,labelcolor,):
         c="create-pyturtle-xyid "+list2nllist([x,y,shape,size_shape,color,name,labelcolor])
         c=n.report(c)
+        print("  *******************    ")
+        print(c)
+        print("  *******************    ")
+
         self.id= int(c[:-2])
         list_pyturtle.append(self)
         return self
+    
+
+
+

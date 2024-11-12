@@ -1,5 +1,5 @@
 import time
-from netlogopy.netlogopy import *
+from netlogopy2.netlogopy import *
 
 if __name__ == "__main__" :
     # Change netlogo_home

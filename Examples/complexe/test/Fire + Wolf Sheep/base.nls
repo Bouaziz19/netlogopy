@@ -1,0 +1,117 @@
+extensions [ matrix csv array py ]
+breed [pyturtles pyturtle]
+directed-link-breed [streets street]
+patches-own [free]
+streets-own [  ]
+pyturtles-own [ ]
+globals[
+ lengthenv
+ widthenv
+ list_ag
+  list_shape
+  list_shape_size
+  list_shape_color
+  list_link
+]
+
+to-report getxyturtle [data]
+  let d [list xcor ycor] of turtle item 0  data
+  report d
+end
+
+to-report netlogoshow [data]
+  show item 0  data
+  report 0
+end
+to-report resize_world [data]
+  resize-world item 0  data item 1  data item 2  data item 3  data
+  report 0
+end
+
+to-report set_background [data]
+  import-drawing item 0  data
+  report 0
+end
+to-report moveto [data]
+  ask turtle item 0  data [
+    move-to turtle item 1  data
+    ]
+  report 0
+end
+
+to-report hideturtle [data]
+  ask turtle item 0  data [
+    hide-turtle
+    ]
+  report 0
+end
+to-report dieturtle [data]
+  ask turtle item 0  data [
+    die
+    ]
+  report 0
+end
+to-report set_shape [data]
+  ask turtle item 0  data [
+    set shape  item 1  data
+    ]
+  report 0
+end
+to-report turtle_setxy [data]
+  ask turtle item 0  data [
+    setxy   item 1  data item 2  data
+    ]
+  report 0
+end
+
+to-report faceto [data]
+   ask turtle item 0  data [
+    face turtle item 1  data
+    ]
+
+  report 0
+end
+to-report distanceto [data]
+  let d 0
+
+  set d [  distance turtle item 1  data] of turtle item 0  data
+  report d
+end
+to-report fdfd [data]
+  ask turtle item 0  data [
+    repeat item 1  data [ fd 1]
+    ]
+
+  report 0
+end
+
+to-report create-street-ft [data]
+  let idd 0
+    ask turtle item 0  data [
+      create-street-to turtle item 1  data[
+        set label item 2  data
+        set label-color item 3  data
+        set idd  (word item 0  data "_" item 1  data)
+        set color item 4  data
+        set shape  item 5  data
+        set thickness  item 6  data
+        ] ]
+
+   report idd
+
+end
+to-report create-pyturtle-xyid [data]
+  let idd 0
+
+  create-ordered-pyturtles 1  [
+              set xcor item 0  data
+              set ycor item 1  data
+              set idd who
+              set shape  item 2  data
+              set size item 3  data
+              set color item  4  data
+              set label item  5  data
+              set label-color item  6  data]
+  report idd
+
+end
