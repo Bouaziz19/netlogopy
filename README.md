@@ -5,7 +5,7 @@
 `netlogopy` is a Python library that bridges NetLogo and Python, enabling advanced agent-based simulations by combining NetLogo’s simulation environment with Python’s powerful libraries for computation, optimization, and AI. `netlogopy` allows direct manipulation of NetLogo agents from Python.
 
 ## Developed by
-- **Nourddine Bouaziz** - [@Bouaziz19](https://github.com/Bouaziz19)
+- **Nourddine Bouaziz** - [@Bouaziz19](https://github.com/Bouaziz19/netlogopy)
 
 ## Installation
 
@@ -377,4 +377,4 @@ if __name__ == "__main__":
 
 # Download Examples
 
-You can download this examples files from git .
+You can download this examples files from git [Examples](https://github.com/Bouaziz19/netlogopy/tree/main/Examples).
