@@ -1,0 +1,11 @@
+name: netlogopy-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - openjdk=11
+  - pip
+  - pip:
+      - netlogopy
+
