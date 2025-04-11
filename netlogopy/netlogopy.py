@@ -20,6 +20,7 @@ def run_netlogo(netlogo_home="C:/Program Files/NetLogo 6.2.2",path_model=""):
     n.openModel(model)
     n.command("setup")
     return n
+
 def run_netlogo_base(netlogo_home="C:/Program Files/NetLogo 6.2.2"):
     nl4py.initialize(netlogo_home)
     nl4py.startServer(netlogo_home)
@@ -42,6 +43,12 @@ def netlogoshow(n,word):
         c = "netlogoshow "+list2nllist([word])
         c = n.report(c)
         return c
+def nl_output_print (n , word) :
+    """
+    Affiche un message dans NetLogo en appelant la procédure 'netlogoshow'.
+    """
+    cmd = "outputprint " + list2nllist([word])
+    return n.report(cmd)
 def resize_world(n,x0,xf,y0,yf):
         c = "resize_world "+list2nllist([x0,xf,y0,yf])
         c = n.report(c)
@@ -171,7 +178,14 @@ class pyturtle(turtle) :
         self.id= int(c[:-2])
         list_pyturtle.append(self)
         return self
-    
+    def set_label(self, text):
+        """
+        Définit le label de la turtle dans NetLogo.
+        """
+        # On construit une commande NetLogo du type:
+        # ask turtle <id> [ set label "text" ]
+        cmd = f'ask turtle {self.id} [ set label "{text}" ]'
+        self.n.command(cmd)
 
 
 

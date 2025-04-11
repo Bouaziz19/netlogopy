@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.19'
+VERSION = '0.0.20'
 DESCRIPTION = 'netlogopy : Usage netlogo by python'
 LONG_DESCRIPTION = 'netlogopy : Usage netlogo by python () '
 
@@ -23,7 +23,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     data_files=[
-        ('netlogo', ['netlogopy/netlogopy.nlogo']),
+        ('netlogo', ['netlogopy/netlogopy.nlogo','netlogopy/base.nls']),
     ],
     install_requires=['nl4py'],
     keywords=['python', 'netlogo', 'simulation', 'multi agent'],

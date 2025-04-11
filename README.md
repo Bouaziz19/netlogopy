@@ -74,7 +74,7 @@ The following example demonstrates a basic setup of `netlogopy`, initializing a 
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home="C:/Program Files/NetLogo 6.2.2"
@@ -98,7 +98,7 @@ This example shows how to create an agent (a "turtle") in NetLogo using Python. 
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -118,7 +118,7 @@ In this example, we set a custom background image in the NetLogo world. The back
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -140,7 +140,7 @@ This example demonstrates creating a link between two agents in the NetLogo worl
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -162,7 +162,7 @@ In this example, the `fd` function is used to move the agent forward by one unit
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -183,7 +183,7 @@ Here, `netlogoshow` displays text above the agent during simulation. Each iterat
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -206,7 +206,7 @@ This example shows how to calculate and print the distance between two agents in
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -228,7 +228,7 @@ In this example, the `face_to` function directs `car01` to face towards `car02`.
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -250,7 +250,7 @@ The `move_to` function moves `car01` directly to `car02`'s position when the loo
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -272,7 +272,7 @@ This example demonstrates how to hide an agent in the simulation using `hideturt
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -293,7 +293,7 @@ In this example, `set_shape` changes the shape of `car01` to `default` at a spec
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -314,7 +314,7 @@ The `getxyturtle` function retrieves the current `x` and `y` coordinates of `car
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -335,7 +335,7 @@ The `setxy` function sets the `x` and `y` coordinates of `car01` to new values d
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"
@@ -356,7 +356,7 @@ This example calculates and prints the distance between `car01` and `car02`.
 
 ```python
 import time
-from netlogopy.nelogopy import *
+from netlogopy.netlogopy import *
 
 if __name__ == "__main__":
     netlogo_home = "C:/Program Files/NetLogo 6.2.2"

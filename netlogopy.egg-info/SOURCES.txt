@@ -2,6 +2,7 @@ LICENSE
 README.md
 setup.py
 netlogopy/__init__.py
+netlogopy/base.nls
 netlogopy/netlogopy.nlogo
 netlogopy/netlogopy.py
 netlogopy.egg-info/PKG-INFO
