@@ -1,0 +1,6 @@
+@article{majid2010comparing,
+  title={Comparing Simulation Output Accuracy of Discrete Event and Agent Based Models: A Quantitive Approach},
+  author={Majid, Mazlina Abdul and Aickelin, Uwe and Siebers, Peer-Olaf},
+  journal={arXiv preprint arXiv:1001.2170},
+  year={2010}
+}
